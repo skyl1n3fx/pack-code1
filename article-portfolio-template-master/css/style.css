@@ -1,0 +1,745 @@
+/********************************************
+	Tag Resets
+********************************************/
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/********************************************
+	Normalize CSS
+	http://necolas.github.com/normalize.css/
+********************************************/
+
+html {
+	height: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	min-height: 100%;
+	font-family: 'Oswald', sans-serif;
+}
+
+html, body {
+	overflow-x: hidden;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video {
+	display: block;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+input,
+textarea,
+button,
+select {
+	margin: 0;
+	font-size: 100%;
+	line-height: normal;
+	vertical-align: baseline;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+textarea {
+	overflow: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ******************************************
+	Custom Styles
+****************************************** */
+
+html {
+   font-size: 100%;
+   line-height: 1;
+   -moz-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+
+	/*background-color: #000000;
+	/*background-image: url(../img/RBhomeimagegreen.jpg);*/
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+	height: 100%;
+
+}
+
+
+body {
+	/*font-family: 'Open Sans', serif;*/
+	color: #000;
+	background: #fff; 
+	
+}
+
+p {
+	font-size: 1em; 
+	line-height: 1.2; 
+	margin: .6em 0;
+}
+
+		
+h1 {
+	font-size: 1.4em; /*3.189em*/
+	line-height: 1.223;
+	font-weight: bold;
+		}
+	
+h2  {
+	font-size: 1.2em; /*2.126*/
+	line-height: 1.2;
+	text-transform: uppercase;
+	font-weight: normal;
+	}
+
+
+h3 {
+	line-height: 1.2;
+	text-transform: uppercase;
+	font-size: 1.4em; 
+	color: #26415f;
+}
+		
+a {
+	color: #888;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+#container-nav {
+    padding-right: 0em;
+    margin-top: 0rem;
+}
+
+#nav {
+	margin-top: 0em;
+	margin-right: 0em;
+	width: 98%;
+	text-align: center;
+	position: fixed;
+    z-index: 1;
+}
+
+#nav ul {
+	list-style: none;
+	padding: 0;
+	margin: .65em 0 .39em;
+	float: right;
+    padding: 0.5em 1em 0 0;
+}
+
+#nav li {
+	color: #999;
+	/*text-shadow: 0 2px 2px rgba(0, 0, 0, .65);*/
+	letter-spacing: 1px;
+}
+
+
+#nav a{
+	display: block;
+	font-size: 1.1em;
+	text-decoration: none;
+	color: #fff;
+	opacity: 1;
+	text-transform: uppercase;
+	padding: 1em 0.4em;
+}
+
+#nav a:hover {
+	color: #999;
+}
+
+
+#nav nav {
+		    height: 0;
+		    overflow: hidden;
+		}
+		
+#nav input[type=checkbox] {
+		    position: absolute;
+		    top: -999em;
+		    left: -999em;
+		}
+	
+#nav label { 
+		    display: block;
+		    background: url("../img/icon-menuwhite.png") no-repeat right center;
+		    text-indent: -999em;
+		    opacity: 1;
+		    cursor: pointer;
+		    -webkit-user-select: none;  /* Chrome all / Safari all */
+		    -moz-user-select: none;     /* Firefox all */
+		    -ms-user-select: none;      /* IE 10+ */
+            user-select: none;
+            margin-top: 1em;
+            padding: 0.2em;
+		}
+	
+#nav input[type=checkbox]:checked ~ nav {
+		    height: auto;
+		    overflow: hidden;  
+		}
+
+.wrapper {
+	        padding: .3em 0.65em 1.3em;
+	        -webkit-box-sizing: border-box;
+	        -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+		}
+
+.wrapper a {
+	text-decoration: none;
+	color: #999;
+}
+
+.wrapper h3 {
+	padding-bottom: 0.5em;
+}
+
+.masthead {
+		color:#fff;
+		width:100%;
+		padding: 0.5em 1em 0.8em 1.1em;
+        background: rgba(38,65, 95, 0.9);
+        position: fixed;
+        z-index: 1;
+        border-bottom: solid 3px #999;
+        }
+
+.masthead h1 {
+    padding-top: 0.5em;
+    color: #fff;
+}
+
+.masthead,
+#content, {
+    margin: 0 5.5%;
+    }
+
+#container-content {
+	padding:0 1em;
+    margin-top: 8em;
+}
+
+/***************************** Portfolio Page Start ************************/
+
+.foliocontent h3 {
+	color: #999;
+	font-weight: bold;
+	letter-spacing: 0.6em;
+	text-align: center;
+}
+
+.foliocontent p {
+	text-align: center;
+}
+
+.portfoliocontainer {
+	background-color: #fff;
+	padding-top: 1em;
+	max-width: 1040px;
+	display: block;
+	margin: 0 auto 3em;
+}
+
+.portfoliocontainersample {
+	background-color: #fff;
+	padding-top: 1em;
+	max-width: 1040px;
+	display: block;
+	margin: 0 auto;
+}
+
+
+/******************************************************
+Portfolio Styling Madness
+*********************************************************/
+
+#portfolioseemore {
+	margin: 6em 1em 7em;
+	padding: 5em 0 0;
+}
+
+.portfolionav {
+	display: block;
+	margin: 0 auto -4em;
+	text-align: center;
+}
+
+.portfolionav li {
+	display: inline-block;
+	margin: 0.5em;
+}
+
+.portfolionav li a {
+    color: #26415f;
+    text-transform: uppercase;
+}
+
+.portfolionav li a:hover {
+	display: inline-block;
+	color: #999;
+}
+
+.publicationtitle {
+	color: #26415f;
+	margin: 2em 1em -1.8em;
+	font-size: 1.8em;
+}
+
+#secondaryporttitle {
+	margin: 4em 1em -2em;
+}
+
+.articletease {
+	background: #fff;
+	box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.3);
+	text-align: left;
+	color: #000;
+	padding-bottom: 1em;
+	border-radius: 4px;
+}
+
+.articletease img {
+	width: 300px;
+	border-radius: 4px;
+}
+
+.articletease h2 {
+	color: #000;
+	text-align: left;
+	margin: 1em 0.5em 0em;
+}
+
+.articletease h3 {
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0em 0.5em;
+	padding-bottom: 0;
+}
+
+.articletease p {
+	margin: 0.5em;
+}
+
+.continuereading {
+	padding: 0.4em;
+	margin: 2em;
+	border: 2px solid #000;
+	border-radius: 4px;
+	width: 114px;
+}
+
+.continuereading:hover {
+	margin: 0.5em;
+	background-color: #000;
+	color: #fff;
+}
+
+.portfoliographics ul.article-list {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	text-align: center;
+}
+
+.portfoliographics ul.article-list li {
+  	display: inline-block;
+  	height: 300px;
+  	margin: 4em 1em 2em 0;
+  	position: relative;
+  	width: 300px;
+  	border-radius: 50%;
+}
+
+/***************************** Contact Details Start *************************/
+
+
+#contactdeets {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0.5em;
+	margin-bottom: 0em;
+	text-align: center;
+	clear: both;
+}
+
+#contactdeets i {
+    padding-right: 0.15em;
+    color: #26415f;
+}
+
+#contactdeets a {
+	color: #26415f;
+}
+
+#contactdeets a:hover {
+	color: #999;
+}
+
+
+footer {
+	padding: 0.5em;
+	clear: both;
+	background-color: #eee;
+}
+
+footer a {
+	text-decoration: none;
+	color: #26415f;
+}
+
+footer a:hover {
+	color: #999;
+}
+
+#container-footer {
+	color: #000;
+	font-size: 80%;
+	text-align: center;
+	opacity: 0.8;
+	width: 100%;
+	left: 0;
+	margin-bottom: 0em;
+}
+
+#container-footer p {
+	color: #000;
+	line-height: 0.5;
+}
+
+/********************************************
+	Fluid Media
+********************************************/
+
+	figure {
+	    position: relative;
+	}
+
+	figure img,
+	figure object,
+	figure embed,
+	figure video {
+	    display: block;
+	    max-width: 100%; 
+	}
+
+	img {
+	    border: 0;
+	    -ms-interpolation-mode: bicubic;
+	}
+
+	/* 
+	interpolation-mode
+	http://css-tricks.com/ie-fix-bicubic-scaling-for-images/
+	 */
+
+	    /* ******************************************
+			Media Queries for screen less than 45em (720px)
+****************************************** */
+	@media screen and (max-width: 45em) {
+        #nav ul {
+            list-style: none;
+            margin: 1.1em 0 0 0;
+            float: right;
+            padding: 0.5em 3em 0.5em 3em;
+            background: rgba(38,65, 95, 0.9);
+        }
+
+	}
+
+
+	    /* ******************************************
+	Media Queries for screen wider than 45em (720px)
+****************************************** */
+
+	@media screen and (min-width: 45em) {
+
+	    body {
+	        font-size: 103%;
+	        }
+
+		h1 {
+	font-size: 2em; /*3.189em*/
+	line-height: 1.223;
+	font-weight: bold;
+		}
+
+		h2 {
+	font-size: 1em; /*3.189em*/
+	line-height: 1.223;
+	text-transform: uppercase;
+		}
+
+		#container-header {
+			background: #fff; 
+			padding:0% 0;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+		}
+    
+	    #nav {
+	        padding: 0;
+	    }
+		
+	    #nav label {
+	        display: none;
+	    }
+		
+	    #nav nav {
+	        height: auto;
+	    }
+		
+	    #nav ul {
+	        border: 0;
+	        margin: 0em;
+	        }
+		#nav li {
+		        display: inline;
+		    }
+
+		#nav a {
+		        display: inline-block;
+		        border: 0;
+		        }
+
+		.masthead {
+			padding-top: 1em;
+		}
+
+		.masthead h1 {
+			padding-top: 0em;
+		}
+
+	#publications {
+			width: 40%;
+			margin-top: 0.3em;
+		}
+    }
+
+		 /* ******************************************
+		Media Queries for screen wider than 60em (960px)
+	****************************************** */
+	
+	@media screen and (min-width: 60em) {
+
+		h1 {
+	font-size: 2.6em; /*3.189em*/
+	line-height: 1.223;
+	font-weight: bold;
+		}
+
+		h2 {
+	font-size: 1.2em; /*3.189em*/
+	line-height: 1.223;
+	text-transform: uppercase;
+		}	
+
+		#nav {
+			margin-top: 0.6em;
+		}
+
+		
+
+	#publications {
+			width: 42%;
+			margin-top: 0.3em;
+			height: 480px;
+		}
+
+	}
+
+	/* ******************************************
+	Print Styles
+****************************************** */
+@media print and (max-width: 8.5in){
+	
+	.masthead {
+		color:black;
+	}
+	
+	#container-header {
+		height: auto;
+	}
+	
+	img {
+		width:2in;
+	}
+	
+	#maincontent	{
+		float:left;
+		width:45%;
+	}
+	
+	#container-footer	{
+		clear:both;
+	}
+	
+}
+
+
+/* Float Clearing http://nicolasgallagher.com/micro-clearfix-hack */
+
+.group:after {
+    content: " "; 
+    display: table;
+    clear: both;
+}
+	/* Clearfix */
+
+.group {
+	    *zoom: 1;
+	    }
+		
+
+/* Figures/Images */
+
+		.ie #maincontent figure {
+		    width: 100%;
+		    box-sizing: border-box;
+		    }
+
+/* "*" hack applies only to IE7 and below */
+
+		.ie #maincontent figure {
+		    *width: auto;
+		    }
+   
+		/* Navigation */
+
+/* IE8 .checked class for checkbox.js */
+
+		#nav input[type=checkbox].checked ~ nav {
+		    height: auto;
+		    overflow: visible;  
+		}
+
+/* Always show nav, IE7 and below */
+
+		.ie #nav nav {
+		    *height: auto;
+		    *overflow: visible;  
+		}
+
+/* Hide navicon, IE7 and below */
+
+		.ie #nav label { 
+		    *background: none;
+		    }
+     
+/* box-sizing polyfill, IE7 and below (The URL in .ie textarea is placeholder only. You will need to replace with path to your domain) */
+
+		.ie .wrapper,
+		.ie .name,
+		.ie .email,
+		.ie input,
+		.ie textarea {
+		    *behavior: url("http://www.absolute-path.com/js/boxsizing.htc");
+		}
+
+	
+	

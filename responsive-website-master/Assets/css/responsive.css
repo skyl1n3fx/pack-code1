@@ -1,0 +1,131 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 690px) {
+
+  .nav {
+    z-index: 1;
+    width: 294px;
+    background-color: #fff;
+    position: absolute;
+    -webkit-transform: translate(-294px, 0);
+    transform: translate(-294px, 0);
+    transition: transform 0.3s ease;
+  }
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .whole__content.open {
+    opacity: 0.5;
+    background-color: #000;
+  }
+  .nav__item {
+    display: list-item;
+    width: 100%;
+    text-align: left;
+  }
+  .header__menu {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    padding: 1em;
+    transition: transform 0.3s ease;
+  }
+  .header__menu.open {
+    -webkit-transform: translate(300px, 0);
+    transform: translate(300px, 0);
+  }
+}
+
+@media screen and (min-width: 491px) {
+  .transaction__desc, .amount__credit, .amount__debit {
+    font-size: 160%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .transaction__table .transaction__date, .transaction__type {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 551px) {
+  .span__detail {
+    display: none;
+  }
+  .transaction__desc, .amount__credit, .amount__debit, .data {
+    font-size: 130%;
+  }
+  .banner {
+    min-height: 230px;
+  }
+}
+
+@media screen and (min-width: 691px) {
+
+  .header__menu {
+    display: none;
+  }
+
+  .nav {
+    float: left;
+    background-color: #fff;
+    width: 30%;
+    position: relative;
+    left: 0;
+  }
+  .nav__header {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .nav__item {
+    width: 100%;
+    text-align: left;
+  }
+  .nav__avatar {
+    width: 70px;
+    height: 70px;
+  }
+  .nav__username {
+    font-size: 21px;
+    bottom: 25%;
+    left: 36%;
+  }
+  .nav__list {
+    position: absolute;
+  }
+  .whole__content  {
+    width: 70%;
+    height: 100%
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+  .dot1 {
+    left: 47%;
+  }
+
+  .dot2 {
+    right: 47%;
+  }
+  .transaction__table td:nth-child(1), .transaction__table th:nth-child(1) {
+    padding-left: 15px;
+  }
+
+  .transaction__table td:nth-child(4),
+  .transaction__table th:nth-child(4) {
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 691px; max-width: 849px) {
+  .transaction__table .transaction__date, .transaction__type {
+    display: none;
+  }
+}

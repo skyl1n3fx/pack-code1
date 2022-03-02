@@ -1,0 +1,82 @@
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+nav {
+	background: #000;
+	line-height: 60px;
+}
+
+nav .navbar-logo {
+	margin-left: 60px;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+nav ul {
+	float: right;
+	margin-right: 60px;
+}
+nav ul li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+nav ul li a {
+	color: #fff;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+nav ul li.active a {
+	color: red;
+}
+
+nav ul li a:hover {
+	color: red;
+}
+
+#icon span {
+    color: #fff;
+    font-size: 25px;
+    float: right;
+    margin: 20px 30px 0;
+    cursor: pointer;
+    display: none;
+}
+
+/*...............Responsive....................*/
+
+@media (max-width: 800px) {
+	#icon span {
+		display: block;
+	}
+
+	nav ul {
+	    position: fixed;
+	    width: 100%;
+	    background: #777;
+	    height: 100vh;
+	    text-align: center;
+	    top: 8%;
+	    right: -100%;
+	    transition: all .5s;
+	    margin-right: 0;
+	}
+
+	nav ul li {
+		display: block;
+	}
+
+	nav ul.show {
+		right: 0;
+	}
+}
+

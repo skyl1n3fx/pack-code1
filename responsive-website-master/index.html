@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <title>InvoizPAID</title>
+
+  </head>
+  <body>
+
+    <nav id="drawer" class="nav">
+      <div class="nav__header">
+
+        <picture class="nav__header__bg">
+          <source media="(min-width: 1000px)" srcset="assets/images/side-menu/menu-header-bg@3x.png">
+
+          <source media="(min-width: 840px)" srcset="assets/images/side-menu/menu-header-bg@2x.png">
+
+          <img src="assets/images/side-menu/menu-header-bg.png" alt="The background image for menu header ">
+        </picture>
+
+        <img src="assets/images/side-menu/male-avatar.svg" alt="The loggedin User's Avatar" class="nav__avatar">
+
+        <h2 class="nav__username">John Doe</h2>
+      </div>
+
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#">
+            <img class="nav_icon" src="assets/images/side-menu/ic-dashboard.svg" alt="The navigation hamburger button">Dashboard
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#">
+            <span><img class="nav_icon" src="assets/images/side-menu/ic-accounts.svg" alt="The navigation hamburger button"></span>
+            Account
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#">
+            <span><img class="nav_icon" src="assets/images/side-menu/ic-cards.svg" alt="The navigation hamburger button"></span>
+            Cards
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#">
+            <span><img class="nav_icon" src="assets/images/side-menu/ic-payments.svg" alt="The navigation hamburger button"></span>
+            Payments
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#">
+            <span><img class="nav_icon" src="assets/images/side-menu/ic-transfers.svg" alt="The navigation hamburger button"></span>
+            Transfers
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#">
+            <span><img class="nav_icon" src="assets/images/side-menu/ic-airtime.svg" alt="The navigation hamburger button"></span>
+            Airtime
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#">
+            <span><img class="nav_icon" src="assets/images/side-menu/ic-settings.svg" alt="The navigation hamburger button"></span>
+            Settings
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="whole__content">
+      <header class="header">
+        <div class="header__inner">
+          <a id="menu" class="header__menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+            </svg>
+          </a>
+
+          <h1 class="header__title">
+            Dashboard
+          </h1>
+        </div>
+      </header>
+
+      <main>
+        <section class="content">
+          <section class="banner">
+            <p>Balance</p>
+            <h2>N979153.36</h2>
+            <h3>16.500SP</h3>
+            <div>
+              <span class="dot1"></span>
+              <span class="dot2"></span>
+            </div>
+          </section>
+
+          <h2 class="transaction__title">Latest Transaction</h2>
+
+          <section class="transaction__log">
+            <table class="transaction__table">
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th class="transaction__date">Date</th>
+                  <th class="transaction__type">Type</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="transaction__desc">ATM Lagos
+                    <small class="span__detail">Today</small>
+                  </td>
+                  <td class="transaction__date data">Today</td>
+                  <td class="transaction__type data">Bank Withdraw</td>
+                  <td class="amount__debit">- N 450.00
+                    <small class="span__detail">Bank Withdraw</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="transaction__desc">ATM Lagos
+                    <small class="span__detail data">Yesterday</small>
+                  </td>
+                  <td class="transaction__date data">Yesterday</td>
+                  <td class="transaction__type data">Bank Withdraw</td>
+                  <td class="amount__credit">+ N 450.00
+                    <small class="span__detail">Bank Withdraw</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="transaction__desc">003 645 6548 65
+                    <small class="span__detail">01/06/2015</small>
+                  </td>
+                  <td class="transaction__date data">01/06/2015</td>
+                  <td class="transaction__type data">Airtime Recharge</td>
+                  <td class="amount__debit">- 100 SP
+                    <small class="span__detail">Airtime Recharge</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="transaction__desc">John Doe
+                    <small class="span__detail">31/05/2015</small>
+                  </td>
+                  <td class="transaction__date data">31/05/2015</td>
+                  <td class="transaction__type data">Transfer</td>
+                  <td class="amount__credit">+ N 450.00
+                    <small class="span__detail">Transfer</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="transaction__desc">ATM Lagos
+                  <small class="span__detail">Today</small>
+                </td>
+                  <td class="transaction__date data">Today</td>
+                  <td class="transaction__type data">Bank Withdraw</td>
+                  <td class="amount__debit">- N 450.00
+                    <small class="span__detail">Bank Withdraw</small>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+      </main>
+    </div>
+
+
+    <script>
+      /*
+       * Triggers when the menu icon is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+      var body = document.querySelector('.whole__content');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        body.classList.toggle('open');
+        menu.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+        body.classList.remove('open');
+        menu.classList.remove('open');
+      });
+    </script>
+  </body>
+</html>
